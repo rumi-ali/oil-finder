@@ -1,26 +1,36 @@
 import { streamText } from "ai";
 import { google } from "@ai-sdk/google";
-import { getVehicleById } from "@/lib/vehicles";
+import { getVehicleById, AIVehicleSchema } from "@/lib/vehicles";
+import type { Vehicle } from "@/lib/vehicles";
 import { CHAT_SYSTEM, buildChatContext } from "@/lib/prompts";
 
 export async function POST(req: Request) {
   try {
-    const { messages, vehicleId } = await req.json();
-
-    if (
-      !vehicleId ||
-      typeof vehicleId !== "string" ||
-      !/^[a-z0-9-]+$/.test(vehicleId) ||
-      vehicleId.length > 100
-    ) {
-      return Response.json({ error: "Invalid vehicle ID" }, { status: 400 });
-    }
+    const body = await req.json();
+    const { messages, vehicleId } = body;
+    const rawVehicle = body?.vehicle;
 
     if (!Array.isArray(messages) || messages.length === 0) {
       return Response.json({ error: "Messages required" }, { status: 400 });
     }
 
-    const vehicle = getVehicleById(vehicleId);
+    let vehicle: Vehicle | null = null;
+
+    if (rawVehicle) {
+      const parsed = AIVehicleSchema.safeParse(rawVehicle);
+      if (!parsed.success) {
+        return Response.json({ error: "Invalid vehicle data" }, { status: 400 });
+      }
+      vehicle = parsed.data as Vehicle;
+    } else if (
+      vehicleId &&
+      typeof vehicleId === "string" &&
+      /^[a-z0-9-]+$/.test(vehicleId) &&
+      vehicleId.length <= 100
+    ) {
+      vehicle = getVehicleById(vehicleId);
+    }
+
     if (!vehicle) {
       return Response.json({ error: "not_found" }, { status: 404 });
     }
