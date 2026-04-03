@@ -1,23 +1,32 @@
 import { streamText } from "ai";
 import { google } from "@ai-sdk/google";
-import { getVehicleById } from "@/lib/vehicles";
+import { getVehicleById, AIVehicleSchema } from "@/lib/vehicles";
+import type { Vehicle } from "@/lib/vehicles";
 import { OIL_ADVISOR_SYSTEM, buildExplanationPrompt } from "@/lib/prompts";
 
 export async function POST(req: Request) {
   try {
     const body = await req.json();
     const vehicleId = body?.vehicleId;
+    const rawVehicle = body?.vehicle;
 
-    if (
-      !vehicleId ||
-      typeof vehicleId !== "string" ||
-      !/^[a-z0-9-]+$/.test(vehicleId) ||
-      vehicleId.length > 100
+    let vehicle: Vehicle | null = null;
+
+    if (rawVehicle) {
+      // AI-generated vehicle passed directly — validate with Zod
+      const parsed = AIVehicleSchema.safeParse(rawVehicle);
+      if (!parsed.success) {
+        return Response.json({ error: "Invalid vehicle data" }, { status: 400 });
+      }
+      vehicle = parsed.data as Vehicle;
+    } else if (
+      vehicleId &&
+      typeof vehicleId === "string" &&
+      /^[a-z0-9-]+$/.test(vehicleId) &&
+      vehicleId.length <= 100
     ) {
-      return Response.json({ error: "Invalid vehicle ID" }, { status: 400 });
+      vehicle = getVehicleById(vehicleId);
     }
-
-    const vehicle = getVehicleById(vehicleId);
 
     if (!vehicle) {
       return Response.json({ error: "not_found" }, { status: 404 });

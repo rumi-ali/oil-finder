@@ -1,3 +1,4 @@
+import { z } from "zod";
 import vehiclesData from "@/data/vehicles.json";
 
 export type VehicleType = "ice" | "ev" | "hybrid";
@@ -41,6 +42,47 @@ export interface Vehicle {
   source: string;
   compatible_products: CompatibleProduct[];
 }
+
+// Zod schemas for AI-generated vehicle validation
+export const OilSpecSchema = z.object({
+  viscosity: z.string().max(20),
+  type: z.string().max(50),
+  api_rating: z.string().max(20).nullable(),
+  ilsac_rating: z.string().max(20).nullable(),
+  capacity_qt: z.number().min(0.5).max(20),
+  change_interval_miles: z.number().min(1000).max(30000),
+  filter_part: z.string().max(30),
+});
+
+export const CompatibleProductSchema = z.object({
+  name: z.string().max(80),
+  tier: z.enum(["premium", "standard"]),
+});
+
+export const VehicleEngineSchema = z.object({
+  displacement: z.string().max(20),
+  type: z.string().max(60),
+  code: z.string().max(20),
+  transmission: z.string().max(40),
+});
+
+export const AIVehicleSchema = z.object({
+  vehicle_id: z.string().max(100),
+  type: z.enum(["ice", "ev", "hybrid"]),
+  make: z.string().max(50).regex(/^[a-zA-Z0-9\s\-.']+$/),
+  model: z.string().max(50).regex(/^[a-zA-Z0-9\s\-.']+$/),
+  trim: z.string().max(50),
+  year: z.number().min(1960).max(2030),
+  year_range: z.tuple([z.number(), z.number()]),
+  engine: VehicleEngineSchema,
+  oil: OilSpecSchema.nullable(),
+  oem_approval: z.string().max(50).nullable(),
+  alternative_viscosity: z.string().max(20).nullable(),
+  notes: z.string().max(300).nullable(),
+  aliases: z.array(z.string()),
+  source: z.string().max(200),
+  compatible_products: z.array(CompatibleProductSchema),
+});
 
 const vehicles: Vehicle[] = vehiclesData as Vehicle[];
 

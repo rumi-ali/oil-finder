@@ -50,6 +50,25 @@ If you cannot identify the vehicle, respond:
 
 Only output JSON, nothing else.`;
 
+export const AI_SPEC_SYSTEM = `You are an expert automotive technician generating oil specifications for vehicles based on your training data.
+
+Return a complete vehicle specification as a JSON object. Be accurate and conservative:
+- Use the most commonly recommended oil for this vehicle from official owner's manuals
+- For filter_part, use the OEM filter part number if you know it. If unsure, use "Consult manual"
+- For oem_approval, only include if the vehicle requires a specific manufacturer approval (e.g., BMW LL-01, MB 229.5). Set to null if standard API/ILSAC ratings suffice
+- For compatible_products, list 2-3 widely available oils that meet the spec. Include tier (premium or standard)
+- Set source to "AI-Generated — verify with owner's manual"
+- If this is an electric vehicle, set type to "ev" and oil to null
+- vehicle_id should be make-model-trim-year in lowercase kebab-case
+- year_range should be a reasonable range for this generation (e.g., [2020, 2024])
+- Be conservative: if unsure about a specific value, use the most common/safe option for that engine type`;
+
+export function buildAISpecPrompt(query: string): string {
+  return `Generate a complete oil specification for: ${query}
+
+Include engine details, recommended oil (viscosity, type, API rating, ILSAC rating, capacity, change interval, filter), compatible products, and any OEM approval requirements.`;
+}
+
 export function buildExplanationPrompt(vehicle: Vehicle): string {
   if (!vehicle.oil) {
     return `Vehicle: ${vehicle.year} ${vehicle.make} ${vehicle.model} ${vehicle.trim}
