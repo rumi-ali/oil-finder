@@ -142,7 +142,7 @@ function FollowUpChat({
     () => new DefaultChatTransport({ api: "/api/chat", body }),
     [vehicleId, vehicle] // eslint-disable-line react-hooks/exhaustive-deps
   );
-  const { messages, status, sendMessage } = useChat({ transport });
+  const { messages, status, sendMessage, clearError } = useChat({ transport });
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
@@ -151,8 +151,12 @@ function FollowUpChat({
   }, [messages]);
 
   const isStreaming = status === "streaming" || status === "submitted";
+  const isError = status === "error";
+  const isBusy = isStreaming || isError;
 
   function askQuestion(question: string) {
+    if (isBusy) return;
+    if (isError) clearError();
     sendMessage({ text: question });
   }
 
@@ -169,7 +173,8 @@ function FollowUpChat({
             <button
               key={i}
               onClick={() => askQuestion(q)}
-              className="text-left px-3.5 py-2.5 text-sm border border-card-border rounded-xl text-foreground/70 hover:border-accent hover:text-accent transition-colors"
+              disabled={isBusy}
+              className="text-left px-3.5 py-2.5 text-sm border border-card-border rounded-xl text-foreground/70 hover:border-accent hover:text-accent transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
             >
               {q}
             </button>
@@ -215,11 +220,19 @@ function FollowUpChat({
         </div>
       )}
 
+      {/* Error state */}
+      {isError && (
+        <div className="mb-4 p-3 rounded-lg bg-red-500/10 border border-red-500/20 text-sm text-red-300">
+          Failed to get a response. <button onClick={clearError} className="text-accent underline">Try again</button>
+        </div>
+      )}
+
       {/* Chat input */}
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          if (chatInput.trim() && !isStreaming) {
+          if (chatInput.trim() && !isBusy) {
+            if (isError) clearError();
             sendMessage({ text: chatInput.trim() });
             setChatInput("");
           }
@@ -231,12 +244,12 @@ function FollowUpChat({
           value={chatInput}
           onChange={(e) => setChatInput(e.target.value)}
           placeholder="Ask about oil, maintenance, driving conditions..."
-          disabled={isStreaming}
+          disabled={isBusy}
           className="flex-1 px-3.5 py-2.5 text-sm border border-card-border rounded-xl bg-background text-foreground outline-none transition-all focus:border-accent disabled:opacity-50"
         />
         <button
           type="submit"
-          disabled={isStreaming || !chatInput.trim()}
+          disabled={isBusy || !chatInput.trim()}
           className="px-4 py-2.5 text-sm bg-accent text-black rounded-xl font-medium hover:bg-accent/90 transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
         >
           Ask
