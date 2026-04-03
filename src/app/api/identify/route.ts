@@ -20,7 +20,7 @@ export async function POST(req: Request) {
     const mimeType = imageFile.type || "image/jpeg";
 
     const { text } = await generateText({
-      model: google("gemini-2.5-flash"),
+      model: google("gemini-3.0-flash"),
       system: IMAGE_IDENTIFY_SYSTEM,
       messages: [
         {
