@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #e5e5e5;
+  --accent: #d4a843;
+  --accent-dim: rgba(212, 168, 67, 0.12);
+  --card: #131313;
+  --card-border: #2a2a2a;
+  --muted: #666;
+  --success: #4ade80;
+  --success-dim: rgba(74, 222, 128, 0.1);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-accent-dim: var(--accent-dim);
+  --color-card: var(--card);
+  --color-card-border: var(--card-border);
+  --color-muted: var(--muted);
+  --color-success: var(--success);
+  --color-success-dim: var(--success-dim);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans, system-ui, -apple-system, sans-serif);
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+@keyframes pulse-bg {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.7; }
+}
+
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
+
+.skeleton-pulse {
+  animation: pulse-bg 1.5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor-blink,
+  .skeleton-pulse {
+    animation: none;
+  }
+}
