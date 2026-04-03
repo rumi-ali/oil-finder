@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 120" width="80" height="120">
+  <!-- Shell Helix Ultra 5W-20 bottle -->
+  <rect x="28" y="0" width="24" height="10" rx="3" fill="#333"/>
+  <rect x="30" y="2" width="20" height="6" rx="2" fill="#444"/>
+  <path d="M32 10 L32 20 L22 30 L22 108 C22 112 26 116 30 116 L50 116 C54 116 58 112 58 108 L58 30 L48 20 L48 10 Z" fill="#e8e8e8" stroke="#ccc" stroke-width="0.5"/>
+  <rect x="22" y="36" width="36" height="44" fill="#FBCE07" rx="0"/>
+  <circle cx="40" cy="52" r="10" fill="#DD1D21"/>
+  <path d="M40 44 C37 44 35 46 34 48 C33 50 34 53 35 55 C36 57 38 59 40 60 C42 59 44 57 45 55 C46 53 47 50 46 48 C45 46 43 44 40 44Z" fill="#FBCE07"/>
+  <text x="40" y="70" text-anchor="middle" font-family="Arial,sans-serif" font-size="5" font-weight="bold" fill="#1a1a1a">HELIX ULTRA</text>
+  <text x="40" y="78" text-anchor="middle" font-family="Arial,sans-serif" font-size="7" font-weight="bold" fill="#1a1a1a">5W-20</text>
+  <rect x="22" y="80" width="36" height="2" fill="#DD1D21"/>
+  <text x="40" y="92" text-anchor="middle" font-family="Arial,sans-serif" font-size="4" fill="#666">FULL SYNTHETIC</text>
+  <text x="40" y="98" text-anchor="middle" font-family="Arial,sans-serif" font-size="3.5" fill="#888">API SP / GF-6</text>
+  <rect x="24" y="30" width="6" height="80" rx="3" fill="white" opacity="0.1"/>
+</svg>

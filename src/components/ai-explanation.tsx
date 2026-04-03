@@ -4,7 +4,13 @@ import { useState, useEffect, useCallback, useRef, useMemo } from "react";
 import { useChat } from "@ai-sdk/react";
 import { DefaultChatTransport } from "ai";
 
-export function AIExplanation({ vehicleId }: { vehicleId: string }) {
+interface AIExplanationProps {
+  vehicleId?: string;
+  vehicle?: unknown;
+  aiGenerated?: boolean;
+}
+
+export function AIExplanation({ vehicleId, vehicle, aiGenerated }: AIExplanationProps) {
   const [explanation, setExplanation] = useState("");
   const [streaming, setStreaming] = useState(false);
   const [done, setDone] = useState(false);
@@ -17,10 +23,11 @@ export function AIExplanation({ vehicleId }: { vehicleId: string }) {
     setError(false);
 
     try {
+      const body = vehicle ? { vehicle } : { vehicleId };
       const res = await fetch("/api/explain", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ vehicleId }),
+        body: JSON.stringify(body),
       });
 
       if (!res.ok || !res.body) {
@@ -45,7 +52,7 @@ export function AIExplanation({ vehicleId }: { vehicleId: string }) {
       setError(true);
       setStreaming(false);
     }
-  }, [vehicleId]);
+  }, [vehicleId, vehicle]);
 
   useEffect(() => {
     fetchExplanation();
@@ -102,8 +109,8 @@ export function AIExplanation({ vehicleId }: { vehicleId: string }) {
             role="status"
             aria-live="polite"
           >
-            <span className="w-1 h-1 rounded-full bg-success" />
-            Grounded in verified manufacturer data
+            <span className={`w-1 h-1 rounded-full ${aiGenerated ? "bg-amber-400" : "bg-success"}`} />
+            {aiGenerated ? "Based on AI-generated specification" : "Grounded in verified manufacturer data"}
           </div>
         )}
       </div>
@@ -112,6 +119,7 @@ export function AIExplanation({ vehicleId }: { vehicleId: string }) {
       {done && (
         <FollowUpChat
           vehicleId={vehicleId}
+          vehicle={vehicle}
           suggestedQuestions={questions}
         />
       )}
@@ -121,15 +129,18 @@ export function AIExplanation({ vehicleId }: { vehicleId: string }) {
 
 function FollowUpChat({
   vehicleId,
+  vehicle,
   suggestedQuestions,
 }: {
-  vehicleId: string;
+  vehicleId?: string;
+  vehicle?: unknown;
   suggestedQuestions: string[];
 }) {
   const [chatInput, setChatInput] = useState("");
+  const body = vehicle ? { vehicle } : { vehicleId };
   const transport = useMemo(
-    () => new DefaultChatTransport({ api: "/api/chat", body: { vehicleId } }),
-    [vehicleId]
+    () => new DefaultChatTransport({ api: "/api/chat", body }),
+    [vehicleId, vehicle] // eslint-disable-line react-hooks/exhaustive-deps
   );
   const { messages, status, sendMessage } = useChat({ transport });
 
