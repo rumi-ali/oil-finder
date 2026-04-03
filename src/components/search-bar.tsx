@@ -40,9 +40,10 @@ export function ExampleChips() {
   const examples = [
     "Toyota Camry 2023",
     "Ford F-150 2023",
-    "Tesla Model 3 2023",
     "BMW 330i 2022",
-    "Honda CR-V 2023",
+    "Audi Q5 2023",
+    "Kia Telluride 2023",
+    "Volvo XC60 2023",
   ];
 
   return (

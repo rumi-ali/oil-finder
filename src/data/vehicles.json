@@ -7,23 +7,9 @@
     "trim": "Touring",
     "year": 2022,
     "year_range": [2022, 2024],
-    "engine": {
-      "displacement": "1.5L",
-      "type": "Turbocharged I-4",
-      "code": "L15B7",
-      "transmission": "CVT"
-    },
-    "oil": {
-      "viscosity": "0W-20",
-      "type": "Full Synthetic",
-      "api_rating": "API SP",
-      "ilsac_rating": "GF-6",
-      "capacity_qt": 3.7,
-      "change_interval_miles": 7500,
-      "filter_part": "15400-RTA-003"
-    },
-    "oem_approval": null,
-    "alternative_viscosity": null,
+    "engine": { "displacement": "1.5L", "type": "Turbocharged I-4", "code": "L15B7", "transmission": "CVT" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 3.7, "change_interval_miles": 7500, "filter_part": "15400-RTA-003" },
+    "oem_approval": null, "alternative_viscosity": null,
     "notes": "All temperatures and preferred lubricant specification",
     "aliases": ["CIVIC", "Civic Sedan", "Civic Touring"],
     "source": "2022 Honda Civic Owner's Manual, Section: Maintenance",
@@ -42,24 +28,9 @@
     "trim": "Sport",
     "year": 2022,
     "year_range": [2022, 2024],
-    "engine": {
-      "displacement": "2.0L",
-      "type": "Naturally Aspirated I-4",
-      "code": "K20C2",
-      "transmission": "CVT"
-    },
-    "oil": {
-      "viscosity": "0W-20",
-      "type": "Full Synthetic",
-      "api_rating": "API SP",
-      "ilsac_rating": "GF-6",
-      "capacity_qt": 4.4,
-      "change_interval_miles": 7500,
-      "filter_part": "15400-RTA-003"
-    },
-    "oem_approval": null,
-    "alternative_viscosity": null,
-    "notes": null,
+    "engine": { "displacement": "2.0L", "type": "Naturally Aspirated I-4", "code": "K20C2", "transmission": "CVT" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 4.4, "change_interval_miles": 7500, "filter_part": "15400-RTA-003" },
+    "oem_approval": null, "alternative_viscosity": null, "notes": null,
     "aliases": ["Civic Sport", "Civic LX"],
     "source": "2022 Honda Civic Owner's Manual, Section: Maintenance",
     "compatible_products": [
@@ -76,30 +47,53 @@
     "trim": "Sport",
     "year": 2023,
     "year_range": [2023, 2025],
-    "engine": {
-      "displacement": "1.5L",
-      "type": "Turbocharged I-4",
-      "code": "L15CA",
-      "transmission": "CVT"
-    },
-    "oil": {
-      "viscosity": "0W-20",
-      "type": "Full Synthetic",
-      "api_rating": "API SP",
-      "ilsac_rating": "GF-6",
-      "capacity_qt": 3.7,
-      "change_interval_miles": 7500,
-      "filter_part": "15400-PLM-A02"
-    },
-    "oem_approval": null,
-    "alternative_viscosity": null,
-    "notes": null,
+    "engine": { "displacement": "1.5L", "type": "Turbocharged I-4", "code": "L15CA", "transmission": "CVT" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 3.7, "change_interval_miles": 7500, "filter_part": "15400-PLM-A02" },
+    "oem_approval": null, "alternative_viscosity": null, "notes": null,
     "aliases": ["ACCORD", "Accord Sedan"],
     "source": "2023 Honda Accord Owner's Manual, Section: Maintenance",
     "compatible_products": [
       { "name": "Pennzoil Platinum 0W-20", "tier": "premium" },
       { "name": "Mobil 1 0W-20", "tier": "premium" },
       { "name": "Valvoline Advanced 0W-20", "tier": "standard" }
+    ]
+  },
+  {
+    "vehicle_id": "honda-cr-v-ex-l-2023",
+    "type": "ice",
+    "make": "Honda",
+    "model": "CR-V",
+    "trim": "EX-L",
+    "year": 2023,
+    "year_range": [2023, 2025],
+    "engine": { "displacement": "1.5L", "type": "Turbocharged I-4", "code": "L15CA", "transmission": "CVT" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 3.7, "change_interval_miles": 7500, "filter_part": "15400-PLM-A02" },
+    "oem_approval": null, "alternative_viscosity": null, "notes": null,
+    "aliases": ["CR-V", "CRV"],
+    "source": "2023 Honda CR-V Owner's Manual, Section: Maintenance",
+    "compatible_products": [
+      { "name": "Pennzoil Platinum 0W-20", "tier": "premium" },
+      { "name": "Mobil 1 0W-20", "tier": "premium" },
+      { "name": "Castrol Edge 0W-20", "tier": "standard" }
+    ]
+  },
+  {
+    "vehicle_id": "honda-pilot-ex-l-2023",
+    "type": "ice",
+    "make": "Honda",
+    "model": "Pilot",
+    "trim": "EX-L",
+    "year": 2023,
+    "year_range": [2023, 2025],
+    "engine": { "displacement": "3.5L", "type": "Naturally Aspirated V6", "code": "J35Y6", "transmission": "10-speed Automatic" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 5.7, "change_interval_miles": 7500, "filter_part": "15400-PLM-A02" },
+    "oem_approval": null, "alternative_viscosity": null,
+    "notes": "V6 engine uses more oil than the 4-cylinder models. Check level regularly.",
+    "aliases": ["PILOT"],
+    "source": "2023 Honda Pilot Owner's Manual, Section: Maintenance",
+    "compatible_products": [
+      { "name": "Pennzoil Platinum 0W-20", "tier": "premium" },
+      { "name": "Mobil 1 0W-20", "tier": "premium" }
     ]
   },
   {
@@ -110,23 +104,9 @@
     "trim": "LE",
     "year": 2023,
     "year_range": [2018, 2024],
-    "engine": {
-      "displacement": "2.5L",
-      "type": "Naturally Aspirated I-4",
-      "code": "A25A-FKS",
-      "transmission": "8-speed Automatic"
-    },
-    "oil": {
-      "viscosity": "0W-20",
-      "type": "Full Synthetic",
-      "api_rating": "API SP",
-      "ilsac_rating": "GF-6",
-      "capacity_qt": 4.8,
-      "change_interval_miles": 10000,
-      "filter_part": "04152-YZZA1"
-    },
-    "oem_approval": null,
-    "alternative_viscosity": null,
+    "engine": { "displacement": "2.5L", "type": "Naturally Aspirated I-4", "code": "A25A-FKS", "transmission": "8-speed Automatic" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 4.8, "change_interval_miles": 10000, "filter_part": "04152-YZZA1" },
+    "oem_approval": null, "alternative_viscosity": null,
     "notes": "Toyota recommends 10,000 mile or 12 month intervals with synthetic",
     "aliases": ["CAMRY", "Camry Sedan"],
     "source": "2023 Toyota Camry Owner's Manual, Section: Maintenance Schedule",
@@ -144,24 +124,9 @@
     "trim": "LE",
     "year": 2023,
     "year_range": [2020, 2025],
-    "engine": {
-      "displacement": "2.0L",
-      "type": "Naturally Aspirated I-4",
-      "code": "M20A-FKS",
-      "transmission": "CVT"
-    },
-    "oil": {
-      "viscosity": "0W-20",
-      "type": "Full Synthetic",
-      "api_rating": "API SP",
-      "ilsac_rating": "GF-6",
-      "capacity_qt": 4.4,
-      "change_interval_miles": 10000,
-      "filter_part": "04152-YZZA1"
-    },
-    "oem_approval": null,
-    "alternative_viscosity": null,
-    "notes": null,
+    "engine": { "displacement": "2.0L", "type": "Naturally Aspirated I-4", "code": "M20A-FKS", "transmission": "CVT" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 4.4, "change_interval_miles": 10000, "filter_part": "04152-YZZA1" },
+    "oem_approval": null, "alternative_viscosity": null, "notes": null,
     "aliases": ["COROLLA", "Corolla Sedan"],
     "source": "2023 Toyota Corolla Owner's Manual, Section: Maintenance Schedule",
     "compatible_products": [
@@ -177,24 +142,9 @@
     "trim": "LE",
     "year": 2023,
     "year_range": [2019, 2025],
-    "engine": {
-      "displacement": "2.5L",
-      "type": "Naturally Aspirated I-4",
-      "code": "A25A-FKS",
-      "transmission": "8-speed Automatic"
-    },
-    "oil": {
-      "viscosity": "0W-20",
-      "type": "Full Synthetic",
-      "api_rating": "API SP",
-      "ilsac_rating": "GF-6",
-      "capacity_qt": 4.8,
-      "change_interval_miles": 10000,
-      "filter_part": "04152-YZZA1"
-    },
-    "oem_approval": null,
-    "alternative_viscosity": null,
-    "notes": null,
+    "engine": { "displacement": "2.5L", "type": "Naturally Aspirated I-4", "code": "A25A-FKS", "transmission": "8-speed Automatic" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 4.8, "change_interval_miles": 10000, "filter_part": "04152-YZZA1" },
+    "oem_approval": null, "alternative_viscosity": null, "notes": null,
     "aliases": ["RAV4", "Rav4"],
     "source": "2023 Toyota RAV4 Owner's Manual, Section: Maintenance Schedule",
     "compatible_products": [
@@ -203,229 +153,42 @@
     ]
   },
   {
-    "vehicle_id": "ford-f150-xlt-2023",
+    "vehicle_id": "toyota-highlander-le-2023",
     "type": "ice",
-    "make": "Ford",
-    "model": "F-150",
-    "trim": "XLT",
+    "make": "Toyota",
+    "model": "Highlander",
+    "trim": "LE",
     "year": 2023,
-    "year_range": [2021, 2025],
-    "engine": {
-      "displacement": "2.7L",
-      "type": "Twin-Turbocharged V6",
-      "code": "Nano EcoBoost",
-      "transmission": "10-speed Automatic"
-    },
-    "oil": {
-      "viscosity": "5W-30",
-      "type": "Full Synthetic",
-      "api_rating": "API SP",
-      "ilsac_rating": "GF-6",
-      "capacity_qt": 6.0,
-      "change_interval_miles": 10000,
-      "filter_part": "FL-2062"
-    },
-    "oem_approval": "WSS-M2C946-B1",
-    "alternative_viscosity": null,
-    "notes": "Ford specifies WSS-M2C946-B1 meeting Motorcraft synthetic blend or full synthetic. 2.7L EcoBoost uses more oil than NA engines due to turbo.",
-    "aliases": ["F-150", "F150", "F 150"],
-    "source": "2023 Ford F-150 Owner's Manual, Section: Capacities and Specifications",
-    "compatible_products": [
-      { "name": "Motorcraft Full Synthetic 5W-30", "tier": "premium" },
-      { "name": "Pennzoil Platinum 5W-30", "tier": "premium" },
-      { "name": "Mobil 1 5W-30", "tier": "standard" }
-    ]
-  },
-  {
-    "vehicle_id": "chevrolet-equinox-lt-2023",
-    "type": "ice",
-    "make": "Chevrolet",
-    "model": "Equinox",
-    "trim": "LT",
-    "year": 2023,
-    "year_range": [2022, 2025],
-    "engine": {
-      "displacement": "1.5L",
-      "type": "Turbocharged I-4",
-      "code": "LYX",
-      "transmission": "6-speed Automatic"
-    },
-    "oil": {
-      "viscosity": "0W-20",
-      "type": "Full Synthetic",
-      "api_rating": "API SP",
-      "ilsac_rating": "GF-6",
-      "capacity_qt": 4.2,
-      "change_interval_miles": 7500,
-      "filter_part": "PF64"
-    },
-    "oem_approval": "dexos1 Gen 3",
-    "alternative_viscosity": null,
-    "notes": "GM requires dexos1 Gen 3 approved oil. Using non-dexos oil may void warranty.",
-    "aliases": ["EQUINOX", "Equinox SUV"],
-    "source": "2023 Chevrolet Equinox Owner's Manual, Section: Service and Maintenance",
-    "compatible_products": [
-      { "name": "ACDelco dexos1 0W-20", "tier": "premium" },
-      { "name": "Mobil 1 0W-20 (dexos1)", "tier": "premium" },
-      { "name": "Pennzoil Platinum 0W-20 (dexos1)", "tier": "standard" }
-    ]
-  },
-  {
-    "vehicle_id": "hyundai-tucson-sel-2023",
-    "type": "ice",
-    "make": "Hyundai",
-    "model": "Tucson",
-    "trim": "SEL",
-    "year": 2023,
-    "year_range": [2022, 2025],
-    "engine": {
-      "displacement": "2.5L",
-      "type": "Naturally Aspirated I-4",
-      "code": "Smartstream G2.5",
-      "transmission": "8-speed Automatic"
-    },
-    "oil": {
-      "viscosity": "0W-20",
-      "type": "Full Synthetic",
-      "api_rating": "API SP",
-      "ilsac_rating": "GF-6",
-      "capacity_qt": 5.1,
-      "change_interval_miles": 7500,
-      "filter_part": "26350-26922"
-    },
-    "oem_approval": null,
-    "alternative_viscosity": "5W-20",
-    "notes": "0W-20 preferred for fuel efficiency. 5W-20 acceptable in warmer climates.",
-    "aliases": ["TUCSON"],
-    "source": "2023 Hyundai Tucson Owner's Manual, Section: Maintenance",
+    "year_range": [2020, 2025],
+    "engine": { "displacement": "2.4L", "type": "Turbocharged I-4", "code": "T24A-FTS", "transmission": "8-speed Automatic" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 5.0, "change_interval_miles": 10000, "filter_part": "04152-YZZA1" },
+    "oem_approval": null, "alternative_viscosity": null,
+    "notes": "2023+ uses turbocharged 4-cylinder replacing the previous V6. Higher heat demands from turbo make synthetic oil essential.",
+    "aliases": ["HIGHLANDER"],
+    "source": "2023 Toyota Highlander Owner's Manual, Section: Maintenance Schedule",
     "compatible_products": [
       { "name": "Mobil 1 0W-20", "tier": "premium" },
       { "name": "Pennzoil Platinum 0W-20", "tier": "premium" },
-      { "name": "Valvoline Advanced 0W-20", "tier": "standard" }
-    ]
-  },
-  {
-    "vehicle_id": "bmw-330i-2022",
-    "type": "ice",
-    "make": "BMW",
-    "model": "3 Series",
-    "trim": "330i",
-    "year": 2022,
-    "year_range": [2019, 2025],
-    "engine": {
-      "displacement": "2.0L",
-      "type": "Turbocharged I-4",
-      "code": "B48B20",
-      "transmission": "8-speed Automatic"
-    },
-    "oil": {
-      "viscosity": "0W-30",
-      "type": "Full Synthetic",
-      "api_rating": null,
-      "ilsac_rating": null,
-      "capacity_qt": 5.3,
-      "change_interval_miles": 10000,
-      "filter_part": "11-42-8-583-898"
-    },
-    "oem_approval": "BMW LL-01",
-    "alternative_viscosity": "5W-30",
-    "notes": "BMW LL-01 approval required. Standard API/ILSAC ratings are insufficient. Using non-LL-01 oil may trigger service warnings and void warranty coverage.",
-    "aliases": ["3 SERIES", "330I", "3-Series"],
-    "source": "2022 BMW 330i Owner's Manual, Section: Service and Maintenance",
-    "compatible_products": [
-      { "name": "Castrol Edge 0W-30 (LL-01)", "tier": "premium" },
-      { "name": "Mobil 1 ESP 0W-30", "tier": "premium" },
-      { "name": "Pennzoil Platinum Euro 0W-30", "tier": "standard" }
-    ]
-  },
-  {
-    "vehicle_id": "tesla-model-3-2023",
-    "type": "ev",
-    "make": "Tesla",
-    "model": "Model 3",
-    "trim": "Long Range",
-    "year": 2023,
-    "year_range": [2017, 2025],
-    "engine": {
-      "displacement": "N/A",
-      "type": "Dual Electric Motor",
-      "code": "N/A",
-      "transmission": "Single-Speed"
-    },
-    "oil": null,
-    "oem_approval": null,
-    "alternative_viscosity": null,
-    "notes": "Electric vehicles do not use engine oil. Tesla Model 3 requires brake fluid replacement every 2 years and cabin air filter replacement annually.",
-    "aliases": ["MODEL 3", "Model3"],
-    "source": "2023 Tesla Model 3 Owner's Manual",
-    "compatible_products": []
-  },
-  {
-    "vehicle_id": "honda-cr-v-ex-l-2023",
-    "type": "ice",
-    "make": "Honda",
-    "model": "CR-V",
-    "trim": "EX-L",
-    "year": 2023,
-    "year_range": [2023, 2025],
-    "engine": {
-      "displacement": "1.5L",
-      "type": "Turbocharged I-4",
-      "code": "L15CA",
-      "transmission": "CVT"
-    },
-    "oil": {
-      "viscosity": "0W-20",
-      "type": "Full Synthetic",
-      "api_rating": "API SP",
-      "ilsac_rating": "GF-6",
-      "capacity_qt": 3.7,
-      "change_interval_miles": 7500,
-      "filter_part": "15400-PLM-A02"
-    },
-    "oem_approval": null,
-    "alternative_viscosity": null,
-    "notes": null,
-    "aliases": ["CR-V", "CRV"],
-    "source": "2023 Honda CR-V Owner's Manual, Section: Maintenance",
-    "compatible_products": [
-      { "name": "Pennzoil Platinum 0W-20", "tier": "premium" },
-      { "name": "Mobil 1 0W-20", "tier": "premium" },
       { "name": "Castrol Edge 0W-20", "tier": "standard" }
     ]
   },
   {
-    "vehicle_id": "mercedes-c300-2022",
+    "vehicle_id": "toyota-tacoma-sr5-2023",
     "type": "ice",
-    "make": "Mercedes-Benz",
-    "model": "C-Class",
-    "trim": "C300",
-    "year": 2022,
-    "year_range": [2022, 2025],
-    "engine": {
-      "displacement": "2.0L",
-      "type": "Turbocharged I-4",
-      "code": "M254",
-      "transmission": "9-speed Automatic"
-    },
-    "oil": {
-      "viscosity": "0W-40",
-      "type": "Full Synthetic",
-      "api_rating": null,
-      "ilsac_rating": null,
-      "capacity_qt": 6.3,
-      "change_interval_miles": 10000,
-      "filter_part": "A2711800509"
-    },
-    "oem_approval": "MB 229.5",
-    "alternative_viscosity": "5W-40",
-    "notes": "Mercedes-Benz requires MB 229.5 approved oil. Standard API ratings are not sufficient. Using non-approved oil may void warranty and trigger service reminders.",
-    "aliases": ["C-CLASS", "C CLASS", "C300", "C-Class Sedan"],
-    "source": "2022 Mercedes-Benz C300 Owner's Manual, Section: Service Products",
+    "make": "Toyota",
+    "model": "Tacoma",
+    "trim": "SR5",
+    "year": 2023,
+    "year_range": [2016, 2023],
+    "engine": { "displacement": "3.5L", "type": "Naturally Aspirated V6", "code": "2GR-FKS", "transmission": "6-speed Automatic" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 6.2, "change_interval_miles": 10000, "filter_part": "04152-YZZA5" },
+    "oem_approval": null, "alternative_viscosity": null,
+    "notes": "V6 truck engine has higher oil capacity. Toyota's 10,000-mile interval assumes full synthetic.",
+    "aliases": ["TACOMA"],
+    "source": "2023 Toyota Tacoma Owner's Manual, Section: Maintenance Schedule",
     "compatible_products": [
-      { "name": "Mobil 1 ESP 0W-40 (MB 229.5)", "tier": "premium" },
-      { "name": "Castrol Edge 0W-40 (MB 229.5)", "tier": "premium" },
-      { "name": "Liqui Moly Top Tec 4200 0W-40", "tier": "standard" }
+      { "name": "Mobil 1 0W-20", "tier": "premium" },
+      { "name": "Pennzoil Platinum 0W-20", "tier": "premium" }
     ]
   },
   {
@@ -436,29 +199,33 @@
     "trim": "SV",
     "year": 2023,
     "year_range": [2021, 2025],
-    "engine": {
-      "displacement": "1.5L",
-      "type": "Turbocharged I-3",
-      "code": "KR15DDT",
-      "transmission": "CVT"
-    },
-    "oil": {
-      "viscosity": "0W-20",
-      "type": "Full Synthetic",
-      "api_rating": "API SP",
-      "ilsac_rating": "GF-6",
-      "capacity_qt": 4.5,
-      "change_interval_miles": 5000,
-      "filter_part": "15208-9F60A"
-    },
-    "oem_approval": null,
-    "alternative_viscosity": null,
+    "engine": { "displacement": "1.5L", "type": "Turbocharged I-3", "code": "KR15DDT", "transmission": "CVT" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 4.5, "change_interval_miles": 5000, "filter_part": "15208-9F60A" },
+    "oem_approval": null, "alternative_viscosity": null,
     "notes": "Nissan recommends shorter intervals (5,000 miles) for the turbocharged 3-cylinder engine due to higher heat output relative to displacement.",
     "aliases": ["ROGUE"],
     "source": "2023 Nissan Rogue Owner's Manual, Section: Maintenance",
     "compatible_products": [
       { "name": "Mobil 1 0W-20", "tier": "premium" },
       { "name": "Pennzoil Platinum 0W-20", "tier": "premium" },
+      { "name": "Valvoline Advanced 0W-20", "tier": "standard" }
+    ]
+  },
+  {
+    "vehicle_id": "nissan-altima-sv-2023",
+    "type": "ice",
+    "make": "Nissan",
+    "model": "Altima",
+    "trim": "SV",
+    "year": 2023,
+    "year_range": [2019, 2025],
+    "engine": { "displacement": "2.5L", "type": "Naturally Aspirated I-4", "code": "QR25DE", "transmission": "CVT" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 5.0, "change_interval_miles": 5000, "filter_part": "15208-65F1E" },
+    "oem_approval": null, "alternative_viscosity": null, "notes": null,
+    "aliases": ["ALTIMA"],
+    "source": "2023 Nissan Altima Owner's Manual, Section: Maintenance",
+    "compatible_products": [
+      { "name": "Mobil 1 0W-20", "tier": "premium" },
       { "name": "Valvoline Advanced 0W-20", "tier": "standard" }
     ]
   },
@@ -470,23 +237,9 @@
     "trim": "Premium",
     "year": 2023,
     "year_range": [2020, 2025],
-    "engine": {
-      "displacement": "2.5L",
-      "type": "Naturally Aspirated Boxer-4",
-      "code": "FB25D",
-      "transmission": "CVT"
-    },
-    "oil": {
-      "viscosity": "0W-20",
-      "type": "Full Synthetic",
-      "api_rating": "API SP",
-      "ilsac_rating": "GF-6",
-      "capacity_qt": 5.1,
-      "change_interval_miles": 6000,
-      "filter_part": "15208-AA170"
-    },
-    "oem_approval": null,
-    "alternative_viscosity": null,
+    "engine": { "displacement": "2.5L", "type": "Naturally Aspirated Boxer-4", "code": "FB25D", "transmission": "CVT" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 5.1, "change_interval_miles": 6000, "filter_part": "15208-AA170" },
+    "oem_approval": null, "alternative_viscosity": null,
     "notes": "Subaru's boxer engine layout means the oil pan sits lower. Check dipstick on level ground for accurate reading.",
     "aliases": ["OUTBACK"],
     "source": "2023 Subaru Outback Owner's Manual, Section: Maintenance Schedule",
@@ -495,5 +248,747 @@
       { "name": "Mobil 1 0W-20", "tier": "premium" },
       { "name": "Castrol Edge 0W-20", "tier": "standard" }
     ]
+  },
+  {
+    "vehicle_id": "subaru-forester-premium-2023",
+    "type": "ice",
+    "make": "Subaru",
+    "model": "Forester",
+    "trim": "Premium",
+    "year": 2023,
+    "year_range": [2019, 2025],
+    "engine": { "displacement": "2.5L", "type": "Naturally Aspirated Boxer-4", "code": "FB25D", "transmission": "CVT" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 5.1, "change_interval_miles": 6000, "filter_part": "15208-AA170" },
+    "oem_approval": null, "alternative_viscosity": null,
+    "notes": "Same boxer engine as the Outback. AWD standard on all Subarus increases drivetrain load.",
+    "aliases": ["FORESTER"],
+    "source": "2023 Subaru Forester Owner's Manual, Section: Maintenance Schedule",
+    "compatible_products": [
+      { "name": "Pennzoil Platinum 0W-20", "tier": "premium" },
+      { "name": "Mobil 1 0W-20", "tier": "premium" }
+    ]
+  },
+  {
+    "vehicle_id": "subaru-crosstrek-premium-2023",
+    "type": "ice",
+    "make": "Subaru",
+    "model": "Crosstrek",
+    "trim": "Premium",
+    "year": 2023,
+    "year_range": [2018, 2025],
+    "engine": { "displacement": "2.0L", "type": "Naturally Aspirated Boxer-4", "code": "FB20D", "transmission": "CVT" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 4.4, "change_interval_miles": 6000, "filter_part": "15208-AA170" },
+    "oem_approval": null, "alternative_viscosity": null, "notes": null,
+    "aliases": ["CROSSTREK"],
+    "source": "2023 Subaru Crosstrek Owner's Manual, Section: Maintenance Schedule",
+    "compatible_products": [
+      { "name": "Pennzoil Platinum 0W-20", "tier": "premium" },
+      { "name": "Mobil 1 0W-20", "tier": "premium" }
+    ]
+  },
+  {
+    "vehicle_id": "mazda-cx-5-preferred-2023",
+    "type": "ice",
+    "make": "Mazda",
+    "model": "CX-5",
+    "trim": "Preferred",
+    "year": 2023,
+    "year_range": [2017, 2025],
+    "engine": { "displacement": "2.5L", "type": "Naturally Aspirated I-4", "code": "PY-VPS", "transmission": "6-speed Automatic" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 4.5, "change_interval_miles": 7500, "filter_part": "PE01-14-302B" },
+    "oem_approval": null, "alternative_viscosity": null,
+    "notes": "Mazda's SkyActiv-G engine uses a high compression ratio (13:1) for efficiency, making proper oil viscosity critical for fuel economy.",
+    "aliases": ["CX-5", "CX5"],
+    "source": "2023 Mazda CX-5 Owner's Manual, Section: Scheduled Maintenance",
+    "compatible_products": [
+      { "name": "Pennzoil Platinum 0W-20", "tier": "premium" },
+      { "name": "Mobil 1 0W-20", "tier": "premium" },
+      { "name": "Castrol Edge 0W-20", "tier": "standard" }
+    ]
+  },
+  {
+    "vehicle_id": "mazda-mazda3-select-2023",
+    "type": "ice",
+    "make": "Mazda",
+    "model": "Mazda3",
+    "trim": "Select",
+    "year": 2023,
+    "year_range": [2019, 2025],
+    "engine": { "displacement": "2.5L", "type": "Naturally Aspirated I-4", "code": "PY-VPS", "transmission": "6-speed Automatic" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 4.5, "change_interval_miles": 7500, "filter_part": "PE01-14-302B" },
+    "oem_approval": null, "alternative_viscosity": null, "notes": null,
+    "aliases": ["MAZDA3", "Mazda 3"],
+    "source": "2023 Mazda Mazda3 Owner's Manual, Section: Scheduled Maintenance",
+    "compatible_products": [
+      { "name": "Pennzoil Platinum 0W-20", "tier": "premium" },
+      { "name": "Mobil 1 0W-20", "tier": "premium" }
+    ]
+  },
+  {
+    "vehicle_id": "hyundai-tucson-sel-2023",
+    "type": "ice",
+    "make": "Hyundai",
+    "model": "Tucson",
+    "trim": "SEL",
+    "year": 2023,
+    "year_range": [2022, 2025],
+    "engine": { "displacement": "2.5L", "type": "Naturally Aspirated I-4", "code": "Smartstream G2.5", "transmission": "8-speed Automatic" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 5.1, "change_interval_miles": 7500, "filter_part": "26350-26922" },
+    "oem_approval": null, "alternative_viscosity": "5W-20",
+    "notes": "0W-20 preferred for fuel efficiency. 5W-20 acceptable in warmer climates.",
+    "aliases": ["TUCSON"],
+    "source": "2023 Hyundai Tucson Owner's Manual, Section: Maintenance",
+    "compatible_products": [
+      { "name": "Mobil 1 0W-20", "tier": "premium" },
+      { "name": "Pennzoil Platinum 0W-20", "tier": "premium" },
+      { "name": "Valvoline Advanced 0W-20", "tier": "standard" }
+    ]
+  },
+  {
+    "vehicle_id": "hyundai-elantra-sel-2023",
+    "type": "ice",
+    "make": "Hyundai",
+    "model": "Elantra",
+    "trim": "SEL",
+    "year": 2023,
+    "year_range": [2021, 2025],
+    "engine": { "displacement": "2.0L", "type": "Naturally Aspirated I-4", "code": "Smartstream G2.0", "transmission": "CVT" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 4.2, "change_interval_miles": 7500, "filter_part": "26350-26922" },
+    "oem_approval": null, "alternative_viscosity": null, "notes": null,
+    "aliases": ["ELANTRA"],
+    "source": "2023 Hyundai Elantra Owner's Manual, Section: Maintenance",
+    "compatible_products": [
+      { "name": "Mobil 1 0W-20", "tier": "premium" },
+      { "name": "Valvoline Advanced 0W-20", "tier": "standard" }
+    ]
+  },
+  {
+    "vehicle_id": "hyundai-sonata-sel-2023",
+    "type": "ice",
+    "make": "Hyundai",
+    "model": "Sonata",
+    "trim": "SEL",
+    "year": 2023,
+    "year_range": [2020, 2025],
+    "engine": { "displacement": "2.5L", "type": "Naturally Aspirated I-4", "code": "Smartstream G2.5", "transmission": "8-speed Automatic" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 5.1, "change_interval_miles": 7500, "filter_part": "26350-26922" },
+    "oem_approval": null, "alternative_viscosity": "5W-20",
+    "notes": "Sonata shares the Smartstream G2.5 engine with Tucson. Same oil spec applies.",
+    "aliases": ["SONATA"],
+    "source": "2023 Hyundai Sonata Owner's Manual, Section: Maintenance",
+    "compatible_products": [
+      { "name": "Mobil 1 0W-20", "tier": "premium" },
+      { "name": "Pennzoil Platinum 0W-20", "tier": "premium" }
+    ]
+  },
+  {
+    "vehicle_id": "hyundai-santa-fe-sel-2023",
+    "type": "ice",
+    "make": "Hyundai",
+    "model": "Santa Fe",
+    "trim": "SEL",
+    "year": 2023,
+    "year_range": [2021, 2025],
+    "engine": { "displacement": "2.5L", "type": "Turbocharged I-4", "code": "Smartstream G2.5T", "transmission": "8-speed DCT" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 5.1, "change_interval_miles": 7500, "filter_part": "26350-26922" },
+    "oem_approval": null, "alternative_viscosity": null,
+    "notes": "Turbo model generates more heat than the NA Tucson/Sonata. More frequent checks recommended in heavy towing.",
+    "aliases": ["SANTA FE", "Santa Fe"],
+    "source": "2023 Hyundai Santa Fe Owner's Manual, Section: Maintenance",
+    "compatible_products": [
+      { "name": "Mobil 1 0W-20", "tier": "premium" },
+      { "name": "Pennzoil Platinum 0W-20", "tier": "premium" },
+      { "name": "Castrol Edge 0W-20", "tier": "standard" }
+    ]
+  },
+  {
+    "vehicle_id": "kia-forte-lxs-2023",
+    "type": "ice",
+    "make": "Kia",
+    "model": "Forte",
+    "trim": "LXS",
+    "year": 2023,
+    "year_range": [2019, 2025],
+    "engine": { "displacement": "2.0L", "type": "Naturally Aspirated I-4", "code": "Smartstream G2.0", "transmission": "CVT" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 4.2, "change_interval_miles": 7500, "filter_part": "26350-26922" },
+    "oem_approval": null, "alternative_viscosity": null, "notes": null,
+    "aliases": ["FORTE"],
+    "source": "2023 Kia Forte Owner's Manual, Section: Maintenance",
+    "compatible_products": [
+      { "name": "Mobil 1 0W-20", "tier": "premium" },
+      { "name": "Valvoline Advanced 0W-20", "tier": "standard" }
+    ]
+  },
+  {
+    "vehicle_id": "kia-sportage-lx-2023",
+    "type": "ice",
+    "make": "Kia",
+    "model": "Sportage",
+    "trim": "LX",
+    "year": 2023,
+    "year_range": [2023, 2025],
+    "engine": { "displacement": "2.5L", "type": "Naturally Aspirated I-4", "code": "Smartstream G2.5", "transmission": "8-speed Automatic" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 5.1, "change_interval_miles": 7500, "filter_part": "26350-26922" },
+    "oem_approval": null, "alternative_viscosity": "5W-20", "notes": null,
+    "aliases": ["SPORTAGE"],
+    "source": "2023 Kia Sportage Owner's Manual, Section: Maintenance",
+    "compatible_products": [
+      { "name": "Mobil 1 0W-20", "tier": "premium" },
+      { "name": "Pennzoil Platinum 0W-20", "tier": "premium" }
+    ]
+  },
+  {
+    "vehicle_id": "kia-sorento-lx-2023",
+    "type": "ice",
+    "make": "Kia",
+    "model": "Sorento",
+    "trim": "LX",
+    "year": 2023,
+    "year_range": [2021, 2025],
+    "engine": { "displacement": "2.5L", "type": "Naturally Aspirated I-4", "code": "Smartstream G2.5", "transmission": "8-speed Automatic" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 5.1, "change_interval_miles": 7500, "filter_part": "26350-26922" },
+    "oem_approval": null, "alternative_viscosity": null, "notes": null,
+    "aliases": ["SORENTO"],
+    "source": "2023 Kia Sorento Owner's Manual, Section: Maintenance",
+    "compatible_products": [
+      { "name": "Mobil 1 0W-20", "tier": "premium" },
+      { "name": "Castrol Edge 0W-20", "tier": "standard" }
+    ]
+  },
+  {
+    "vehicle_id": "kia-telluride-lx-2023",
+    "type": "ice",
+    "make": "Kia",
+    "model": "Telluride",
+    "trim": "LX",
+    "year": 2023,
+    "year_range": [2020, 2025],
+    "engine": { "displacement": "3.8L", "type": "Naturally Aspirated V6", "code": "Lambda II G3.8", "transmission": "8-speed Automatic" },
+    "oil": { "viscosity": "5W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 6.0, "change_interval_miles": 7500, "filter_part": "26350-26922" },
+    "oem_approval": null, "alternative_viscosity": "5W-30",
+    "notes": "V6 engine uses 5W-20, not 0W-20 like the 4-cylinder Kias. Higher viscosity for the larger displacement.",
+    "aliases": ["TELLURIDE"],
+    "source": "2023 Kia Telluride Owner's Manual, Section: Maintenance",
+    "compatible_products": [
+      { "name": "Mobil 1 5W-20", "tier": "premium" },
+      { "name": "Pennzoil Platinum 5W-20", "tier": "premium" }
+    ]
+  },
+  {
+    "vehicle_id": "ford-f150-xlt-2023",
+    "type": "ice",
+    "make": "Ford",
+    "model": "F-150",
+    "trim": "XLT",
+    "year": 2023,
+    "year_range": [2021, 2025],
+    "engine": { "displacement": "2.7L", "type": "Twin-Turbocharged V6", "code": "Nano EcoBoost", "transmission": "10-speed Automatic" },
+    "oil": { "viscosity": "5W-30", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 6.0, "change_interval_miles": 10000, "filter_part": "FL-2062" },
+    "oem_approval": "WSS-M2C946-B1", "alternative_viscosity": null,
+    "notes": "Ford specifies WSS-M2C946-B1 meeting Motorcraft synthetic blend or full synthetic. 2.7L EcoBoost uses more oil than NA engines due to turbo.",
+    "aliases": ["F-150", "F150", "F 150"],
+    "source": "2023 Ford F-150 Owner's Manual, Section: Capacities and Specifications",
+    "compatible_products": [
+      { "name": "Motorcraft Full Synthetic 5W-30", "tier": "premium" },
+      { "name": "Pennzoil Platinum 5W-30", "tier": "premium" },
+      { "name": "Mobil 1 5W-30", "tier": "standard" }
+    ]
+  },
+  {
+    "vehicle_id": "ford-explorer-xlt-2023",
+    "type": "ice",
+    "make": "Ford",
+    "model": "Explorer",
+    "trim": "XLT",
+    "year": 2023,
+    "year_range": [2020, 2025],
+    "engine": { "displacement": "2.3L", "type": "Turbocharged I-4", "code": "EcoBoost", "transmission": "10-speed Automatic" },
+    "oil": { "viscosity": "5W-30", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 5.7, "change_interval_miles": 10000, "filter_part": "FL-910S" },
+    "oem_approval": "WSS-M2C946-B1", "alternative_viscosity": null,
+    "notes": "RWD-based platform. Ford recommends 10,000 mile intervals under normal conditions, 5,000 under severe (towing, dusty roads).",
+    "aliases": ["EXPLORER"],
+    "source": "2023 Ford Explorer Owner's Manual, Section: Capacities and Specifications",
+    "compatible_products": [
+      { "name": "Motorcraft Full Synthetic 5W-30", "tier": "premium" },
+      { "name": "Pennzoil Platinum 5W-30", "tier": "premium" }
+    ]
+  },
+  {
+    "vehicle_id": "ford-escape-se-2023",
+    "type": "ice",
+    "make": "Ford",
+    "model": "Escape",
+    "trim": "SE",
+    "year": 2023,
+    "year_range": [2020, 2025],
+    "engine": { "displacement": "1.5L", "type": "Turbocharged I-3", "code": "EcoBoost", "transmission": "8-speed Automatic" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 4.3, "change_interval_miles": 10000, "filter_part": "FL-910S" },
+    "oem_approval": "WSS-M2C962-A1", "alternative_viscosity": null,
+    "notes": "3-cylinder turbocharged engine — unusual for an SUV. Higher RPMs than 4-cylinders mean the turbo works harder.",
+    "aliases": ["ESCAPE"],
+    "source": "2023 Ford Escape Owner's Manual, Section: Capacities and Specifications",
+    "compatible_products": [
+      { "name": "Motorcraft Full Synthetic 0W-20", "tier": "premium" },
+      { "name": "Pennzoil Platinum 0W-20", "tier": "premium" }
+    ]
+  },
+  {
+    "vehicle_id": "ford-mustang-ecoboost-2023",
+    "type": "ice",
+    "make": "Ford",
+    "model": "Mustang",
+    "trim": "EcoBoost",
+    "year": 2023,
+    "year_range": [2015, 2023],
+    "engine": { "displacement": "2.3L", "type": "Turbocharged I-4", "code": "EcoBoost", "transmission": "10-speed Automatic" },
+    "oil": { "viscosity": "5W-30", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 5.7, "change_interval_miles": 10000, "filter_part": "FL-910S" },
+    "oem_approval": "WSS-M2C946-B1", "alternative_viscosity": null,
+    "notes": "Performance-tuned variant of the 2.3L EcoBoost. Higher boost pressures than Explorer version require consistent oil maintenance.",
+    "aliases": ["MUSTANG", "Mustang EcoBoost"],
+    "source": "2023 Ford Mustang Owner's Manual, Section: Capacities and Specifications",
+    "compatible_products": [
+      { "name": "Motorcraft Full Synthetic 5W-30", "tier": "premium" },
+      { "name": "Mobil 1 5W-30", "tier": "premium" }
+    ]
+  },
+  {
+    "vehicle_id": "chevrolet-equinox-lt-2023",
+    "type": "ice",
+    "make": "Chevrolet",
+    "model": "Equinox",
+    "trim": "LT",
+    "year": 2023,
+    "year_range": [2022, 2025],
+    "engine": { "displacement": "1.5L", "type": "Turbocharged I-4", "code": "LYX", "transmission": "6-speed Automatic" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 4.2, "change_interval_miles": 7500, "filter_part": "PF64" },
+    "oem_approval": "dexos1 Gen 3", "alternative_viscosity": null,
+    "notes": "GM requires dexos1 Gen 3 approved oil. Using non-dexos oil may void warranty.",
+    "aliases": ["EQUINOX", "Equinox SUV"],
+    "source": "2023 Chevrolet Equinox Owner's Manual, Section: Service and Maintenance",
+    "compatible_products": [
+      { "name": "ACDelco dexos1 0W-20", "tier": "premium" },
+      { "name": "Mobil 1 0W-20 (dexos1)", "tier": "premium" },
+      { "name": "Pennzoil Platinum 0W-20 (dexos1)", "tier": "standard" }
+    ]
+  },
+  {
+    "vehicle_id": "chevrolet-silverado-lt-2023",
+    "type": "ice",
+    "make": "Chevrolet",
+    "model": "Silverado 1500",
+    "trim": "LT",
+    "year": 2023,
+    "year_range": [2019, 2025],
+    "engine": { "displacement": "5.3L", "type": "Naturally Aspirated V8", "code": "L84 EcoTec3", "transmission": "8-speed Automatic" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 8.0, "change_interval_miles": 7500, "filter_part": "PF63E" },
+    "oem_approval": "dexos1 Gen 3", "alternative_viscosity": null,
+    "notes": "V8 with Active Fuel Management (cylinder deactivation). 8 quarts capacity — significantly more than 4-cylinder vehicles. dexos1 Gen 3 mandatory.",
+    "aliases": ["SILVERADO", "Silverado 1500"],
+    "source": "2023 Chevrolet Silverado 1500 Owner's Manual, Section: Service and Maintenance",
+    "compatible_products": [
+      { "name": "ACDelco dexos1 0W-20", "tier": "premium" },
+      { "name": "Mobil 1 0W-20 (dexos1)", "tier": "premium" },
+      { "name": "Pennzoil Platinum 0W-20 (dexos1)", "tier": "standard" }
+    ]
+  },
+  {
+    "vehicle_id": "chevrolet-malibu-lt-2023",
+    "type": "ice",
+    "make": "Chevrolet",
+    "model": "Malibu",
+    "trim": "LT",
+    "year": 2023,
+    "year_range": [2016, 2024],
+    "engine": { "displacement": "1.5L", "type": "Turbocharged I-4", "code": "LFV", "transmission": "CVT" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 4.2, "change_interval_miles": 7500, "filter_part": "PF64" },
+    "oem_approval": "dexos1 Gen 3", "alternative_viscosity": null,
+    "notes": "Malibu discontinued after 2024. Last generation of GM's mid-size sedan.",
+    "aliases": ["MALIBU"],
+    "source": "2023 Chevrolet Malibu Owner's Manual, Section: Service and Maintenance",
+    "compatible_products": [
+      { "name": "ACDelco dexos1 0W-20", "tier": "premium" },
+      { "name": "Mobil 1 0W-20 (dexos1)", "tier": "standard" }
+    ]
+  },
+  {
+    "vehicle_id": "jeep-grand-cherokee-laredo-2023",
+    "type": "ice",
+    "make": "Jeep",
+    "model": "Grand Cherokee",
+    "trim": "Laredo",
+    "year": 2023,
+    "year_range": [2022, 2025],
+    "engine": { "displacement": "3.6L", "type": "Naturally Aspirated V6", "code": "Pentastar", "transmission": "8-speed Automatic" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 5.9, "change_interval_miles": 10000, "filter_part": "68191349AC" },
+    "oem_approval": "MS-6395", "alternative_viscosity": null,
+    "notes": "Stellantis (formerly FCA) requires MS-6395 specification. Pentastar V6 is the workhorse across Jeep, Ram, and Dodge lineups.",
+    "aliases": ["GRAND CHEROKEE", "Grand Cherokee"],
+    "source": "2023 Jeep Grand Cherokee Owner's Manual, Section: Maintenance Schedules",
+    "compatible_products": [
+      { "name": "Mopar MaxPro 0W-20", "tier": "premium" },
+      { "name": "Pennzoil Platinum 0W-20", "tier": "premium" },
+      { "name": "Mobil 1 0W-20", "tier": "standard" }
+    ]
+  },
+  {
+    "vehicle_id": "jeep-wrangler-sport-2023",
+    "type": "ice",
+    "make": "Jeep",
+    "model": "Wrangler",
+    "trim": "Sport",
+    "year": 2023,
+    "year_range": [2018, 2025],
+    "engine": { "displacement": "3.6L", "type": "Naturally Aspirated V6", "code": "Pentastar", "transmission": "8-speed Automatic" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 5.9, "change_interval_miles": 10000, "filter_part": "68191349AC" },
+    "oem_approval": "MS-6395", "alternative_viscosity": null,
+    "notes": "Off-road use counts as 'severe' driving conditions. If you wheel regularly, cut the interval to 5,000 miles.",
+    "aliases": ["WRANGLER"],
+    "source": "2023 Jeep Wrangler Owner's Manual, Section: Maintenance Schedules",
+    "compatible_products": [
+      { "name": "Mopar MaxPro 0W-20", "tier": "premium" },
+      { "name": "Pennzoil Platinum 0W-20", "tier": "premium" }
+    ]
+  },
+  {
+    "vehicle_id": "ram-1500-big-horn-2023",
+    "type": "ice",
+    "make": "Ram",
+    "model": "1500",
+    "trim": "Big Horn",
+    "year": 2023,
+    "year_range": [2019, 2025],
+    "engine": { "displacement": "5.7L", "type": "Naturally Aspirated V8", "code": "Hemi", "transmission": "8-speed Automatic" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 7.0, "change_interval_miles": 10000, "filter_part": "68191349AC" },
+    "oem_approval": "MS-6395", "alternative_viscosity": null,
+    "notes": "5.7L Hemi with MDS (Multi-Displacement System) cylinder deactivation. 7 quarts capacity. Same MS-6395 spec as Jeep products.",
+    "aliases": ["RAM 1500", "Ram 1500", "RAM"],
+    "source": "2023 Ram 1500 Owner's Manual, Section: Maintenance Schedules",
+    "compatible_products": [
+      { "name": "Mopar MaxPro 0W-20", "tier": "premium" },
+      { "name": "Pennzoil Platinum 0W-20", "tier": "premium" },
+      { "name": "Mobil 1 0W-20", "tier": "standard" }
+    ]
+  },
+  {
+    "vehicle_id": "bmw-330i-2022",
+    "type": "ice",
+    "make": "BMW",
+    "model": "3 Series",
+    "trim": "330i",
+    "year": 2022,
+    "year_range": [2019, 2025],
+    "engine": { "displacement": "2.0L", "type": "Turbocharged I-4", "code": "B48B20", "transmission": "8-speed Automatic" },
+    "oil": { "viscosity": "0W-30", "type": "Full Synthetic", "api_rating": null, "ilsac_rating": null, "capacity_qt": 5.3, "change_interval_miles": 10000, "filter_part": "11-42-8-583-898" },
+    "oem_approval": "BMW LL-01", "alternative_viscosity": "5W-30",
+    "notes": "BMW LL-01 approval required. Standard API/ILSAC ratings are insufficient. Using non-LL-01 oil may trigger service warnings and void warranty coverage.",
+    "aliases": ["3 SERIES", "330I", "3-Series"],
+    "source": "2022 BMW 330i Owner's Manual, Section: Service and Maintenance",
+    "compatible_products": [
+      { "name": "Castrol Edge 0W-30 (LL-01)", "tier": "premium" },
+      { "name": "Mobil 1 ESP 0W-30", "tier": "premium" },
+      { "name": "Pennzoil Platinum Euro 0W-30", "tier": "standard" }
+    ]
+  },
+  {
+    "vehicle_id": "bmw-x3-xdrive30i-2023",
+    "type": "ice",
+    "make": "BMW",
+    "model": "X3",
+    "trim": "xDrive30i",
+    "year": 2023,
+    "year_range": [2018, 2025],
+    "engine": { "displacement": "2.0L", "type": "Turbocharged I-4", "code": "B48B20", "transmission": "8-speed Automatic" },
+    "oil": { "viscosity": "0W-30", "type": "Full Synthetic", "api_rating": null, "ilsac_rating": null, "capacity_qt": 5.3, "change_interval_miles": 10000, "filter_part": "11-42-8-583-898" },
+    "oem_approval": "BMW LL-01", "alternative_viscosity": "5W-30",
+    "notes": "Same B48 engine as the 330i. AWD adds slight parasitic load but oil spec remains identical.",
+    "aliases": ["X3", "X3 xDrive30i"],
+    "source": "2023 BMW X3 Owner's Manual, Section: Service and Maintenance",
+    "compatible_products": [
+      { "name": "Castrol Edge 0W-30 (LL-01)", "tier": "premium" },
+      { "name": "Mobil 1 ESP 0W-30", "tier": "premium" }
+    ]
+  },
+  {
+    "vehicle_id": "bmw-530i-2023",
+    "type": "ice",
+    "make": "BMW",
+    "model": "5 Series",
+    "trim": "530i",
+    "year": 2023,
+    "year_range": [2017, 2023],
+    "engine": { "displacement": "2.0L", "type": "Turbocharged I-4", "code": "B48B20", "transmission": "8-speed Automatic" },
+    "oil": { "viscosity": "0W-30", "type": "Full Synthetic", "api_rating": null, "ilsac_rating": null, "capacity_qt": 5.3, "change_interval_miles": 10000, "filter_part": "11-42-8-583-898" },
+    "oem_approval": "BMW LL-01", "alternative_viscosity": "5W-30",
+    "notes": "BMW LL-01 approval required across the entire BMW lineup using the B48 engine.",
+    "aliases": ["5 SERIES", "530I", "5-Series"],
+    "source": "2023 BMW 530i Owner's Manual, Section: Service and Maintenance",
+    "compatible_products": [
+      { "name": "Castrol Edge 0W-30 (LL-01)", "tier": "premium" },
+      { "name": "Mobil 1 ESP 0W-30", "tier": "premium" }
+    ]
+  },
+  {
+    "vehicle_id": "mercedes-c300-2022",
+    "type": "ice",
+    "make": "Mercedes-Benz",
+    "model": "C-Class",
+    "trim": "C300",
+    "year": 2022,
+    "year_range": [2022, 2025],
+    "engine": { "displacement": "2.0L", "type": "Turbocharged I-4", "code": "M254", "transmission": "9-speed Automatic" },
+    "oil": { "viscosity": "0W-40", "type": "Full Synthetic", "api_rating": null, "ilsac_rating": null, "capacity_qt": 6.3, "change_interval_miles": 10000, "filter_part": "A2711800509" },
+    "oem_approval": "MB 229.5", "alternative_viscosity": "5W-40",
+    "notes": "Mercedes-Benz requires MB 229.5 approved oil. Standard API ratings are not sufficient. Using non-approved oil may void warranty and trigger service reminders.",
+    "aliases": ["C-CLASS", "C CLASS", "C300", "C-Class Sedan"],
+    "source": "2022 Mercedes-Benz C300 Owner's Manual, Section: Service Products",
+    "compatible_products": [
+      { "name": "Mobil 1 ESP 0W-40 (MB 229.5)", "tier": "premium" },
+      { "name": "Castrol Edge 0W-40 (MB 229.5)", "tier": "premium" },
+      { "name": "Liqui Moly Top Tec 4200 0W-40", "tier": "standard" }
+    ]
+  },
+  {
+    "vehicle_id": "mercedes-glc-300-2023",
+    "type": "ice",
+    "make": "Mercedes-Benz",
+    "model": "GLC",
+    "trim": "GLC 300",
+    "year": 2023,
+    "year_range": [2023, 2025],
+    "engine": { "displacement": "2.0L", "type": "Turbocharged I-4 + Mild Hybrid", "code": "M254", "transmission": "9-speed Automatic" },
+    "oil": { "viscosity": "0W-40", "type": "Full Synthetic", "api_rating": null, "ilsac_rating": null, "capacity_qt": 6.3, "change_interval_miles": 10000, "filter_part": "A2711800509" },
+    "oem_approval": "MB 229.5", "alternative_viscosity": "5W-40",
+    "notes": "New GLC adds 48V mild hybrid assist to the M254 turbo engine. Same oil spec as C-Class. Integrated starter-generator doesn't affect oil requirements.",
+    "aliases": ["GLC", "GLC-Class", "GLC 300"],
+    "source": "2023 Mercedes-Benz GLC Owner's Manual, Section: Service Products",
+    "compatible_products": [
+      { "name": "Mobil 1 ESP 0W-40 (MB 229.5)", "tier": "premium" },
+      { "name": "Castrol Edge 0W-40 (MB 229.5)", "tier": "premium" }
+    ]
+  },
+  {
+    "vehicle_id": "volkswagen-jetta-s-2023",
+    "type": "ice",
+    "make": "Volkswagen",
+    "model": "Jetta",
+    "trim": "S",
+    "year": 2023,
+    "year_range": [2019, 2025],
+    "engine": { "displacement": "1.5L", "type": "Turbocharged I-4", "code": "EA211 TSI Evo", "transmission": "8-speed Automatic" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": null, "capacity_qt": 5.7, "change_interval_miles": 10000, "filter_part": "06L-115-562" },
+    "oem_approval": "VW 508.00", "alternative_viscosity": null,
+    "notes": "VW 508.00 is a unique low-HTHS viscosity spec designed for maximum fuel efficiency. Only oils explicitly approved for 508.00 should be used.",
+    "aliases": ["JETTA"],
+    "source": "2023 Volkswagen Jetta Owner's Manual, Section: Technical Data",
+    "compatible_products": [
+      { "name": "Castrol Edge Professional 0W-20 (508.00)", "tier": "premium" },
+      { "name": "Liqui Moly Special Tec V 0W-20", "tier": "premium" },
+      { "name": "Ravenol REP 0W-20", "tier": "standard" }
+    ]
+  },
+  {
+    "vehicle_id": "volkswagen-tiguan-se-2023",
+    "type": "ice",
+    "make": "Volkswagen",
+    "model": "Tiguan",
+    "trim": "SE",
+    "year": 2023,
+    "year_range": [2018, 2025],
+    "engine": { "displacement": "2.0L", "type": "Turbocharged I-4", "code": "EA888 TSI", "transmission": "8-speed Automatic" },
+    "oil": { "viscosity": "0W-40", "type": "Full Synthetic", "api_rating": null, "ilsac_rating": null, "capacity_qt": 5.8, "change_interval_miles": 10000, "filter_part": "06L-115-562" },
+    "oem_approval": "VW 502.00", "alternative_viscosity": "5W-40",
+    "notes": "VW 502.00 spec required. The EA888 is VW Group's most prolific turbo engine, shared across VW, Audi, and Skoda. 0W-40 provides wider temperature protection than the Jetta's 0W-20 spec.",
+    "aliases": ["TIGUAN"],
+    "source": "2023 Volkswagen Tiguan Owner's Manual, Section: Technical Data",
+    "compatible_products": [
+      { "name": "Castrol Edge 0W-40 (VW 502.00)", "tier": "premium" },
+      { "name": "Mobil 1 0W-40 (VW 502.00)", "tier": "premium" },
+      { "name": "Liqui Moly Top Tec 4100 0W-40", "tier": "standard" }
+    ]
+  },
+  {
+    "vehicle_id": "audi-a4-premium-2023",
+    "type": "ice",
+    "make": "Audi",
+    "model": "A4",
+    "trim": "Premium",
+    "year": 2023,
+    "year_range": [2017, 2025],
+    "engine": { "displacement": "2.0L", "type": "Turbocharged I-4", "code": "EA888 TFSI", "transmission": "7-speed S tronic DCT" },
+    "oil": { "viscosity": "0W-40", "type": "Full Synthetic", "api_rating": null, "ilsac_rating": null, "capacity_qt": 5.7, "change_interval_miles": 10000, "filter_part": "06L-115-562" },
+    "oem_approval": "VW 502.00", "alternative_viscosity": "5W-40",
+    "notes": "Audi uses VW Group oil specifications. Same EA888 engine family as the Tiguan. Quattro AWD models have slightly higher oil stress due to drivetrain load.",
+    "aliases": ["A4"],
+    "source": "2023 Audi A4 Owner's Manual, Section: Technical Data",
+    "compatible_products": [
+      { "name": "Castrol Edge 0W-40 (VW 502.00)", "tier": "premium" },
+      { "name": "Mobil 1 0W-40 (VW 502.00)", "tier": "premium" },
+      { "name": "Liqui Moly Top Tec 4100 0W-40", "tier": "standard" }
+    ]
+  },
+  {
+    "vehicle_id": "audi-q5-premium-2023",
+    "type": "ice",
+    "make": "Audi",
+    "model": "Q5",
+    "trim": "Premium",
+    "year": 2023,
+    "year_range": [2018, 2025],
+    "engine": { "displacement": "2.0L", "type": "Turbocharged I-4", "code": "EA888 TFSI", "transmission": "7-speed S tronic DCT" },
+    "oil": { "viscosity": "0W-40", "type": "Full Synthetic", "api_rating": null, "ilsac_rating": null, "capacity_qt": 5.7, "change_interval_miles": 10000, "filter_part": "06L-115-562" },
+    "oem_approval": "VW 502.00", "alternative_viscosity": "5W-40",
+    "notes": "Same powertrain as the A4 in SUV form. Quattro AWD standard.",
+    "aliases": ["Q5"],
+    "source": "2023 Audi Q5 Owner's Manual, Section: Technical Data",
+    "compatible_products": [
+      { "name": "Castrol Edge 0W-40 (VW 502.00)", "tier": "premium" },
+      { "name": "Mobil 1 0W-40 (VW 502.00)", "tier": "premium" }
+    ]
+  },
+  {
+    "vehicle_id": "lexus-es-350-2023",
+    "type": "ice",
+    "make": "Lexus",
+    "model": "ES",
+    "trim": "350",
+    "year": 2023,
+    "year_range": [2019, 2025],
+    "engine": { "displacement": "3.5L", "type": "Naturally Aspirated V6", "code": "2GR-FKS", "transmission": "8-speed Automatic" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 5.8, "change_interval_miles": 10000, "filter_part": "04152-YZZA1" },
+    "oem_approval": null, "alternative_viscosity": null,
+    "notes": "Lexus is Toyota's luxury brand. Same Toyota oil specifications and intervals apply. V6 provides smoother power delivery than the Camry's 4-cylinder.",
+    "aliases": ["ES 350", "ES350"],
+    "source": "2023 Lexus ES 350 Owner's Manual, Section: Maintenance Schedule",
+    "compatible_products": [
+      { "name": "Mobil 1 0W-20", "tier": "premium" },
+      { "name": "Pennzoil Platinum 0W-20", "tier": "premium" }
+    ]
+  },
+  {
+    "vehicle_id": "lexus-rx-350-2023",
+    "type": "ice",
+    "make": "Lexus",
+    "model": "RX",
+    "trim": "350",
+    "year": 2023,
+    "year_range": [2023, 2025],
+    "engine": { "displacement": "2.4L", "type": "Turbocharged I-4", "code": "T24A-FTS", "transmission": "8-speed Automatic" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 5.0, "change_interval_miles": 10000, "filter_part": "04152-YZZA1" },
+    "oem_approval": null, "alternative_viscosity": null,
+    "notes": "2023 RX switched from V6 to turbocharged 4-cylinder. More power, better efficiency, but turbo demands quality synthetic oil.",
+    "aliases": ["RX 350", "RX350"],
+    "source": "2023 Lexus RX 350 Owner's Manual, Section: Maintenance Schedule",
+    "compatible_products": [
+      { "name": "Mobil 1 0W-20", "tier": "premium" },
+      { "name": "Castrol Edge 0W-20", "tier": "standard" }
+    ]
+  },
+  {
+    "vehicle_id": "acura-tlx-2023",
+    "type": "ice",
+    "make": "Acura",
+    "model": "TLX",
+    "trim": "Technology",
+    "year": 2023,
+    "year_range": [2021, 2025],
+    "engine": { "displacement": "2.0L", "type": "Turbocharged I-4", "code": "K20C6", "transmission": "10-speed Automatic" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 4.6, "change_interval_miles": 7500, "filter_part": "15400-PLM-A02" },
+    "oem_approval": null, "alternative_viscosity": null,
+    "notes": "Acura is Honda's luxury brand. Same Honda oil specs apply. K20C6 is a detuned version of the Civic Type R engine.",
+    "aliases": ["TLX"],
+    "source": "2023 Acura TLX Owner's Manual, Section: Maintenance",
+    "compatible_products": [
+      { "name": "Pennzoil Platinum 0W-20", "tier": "premium" },
+      { "name": "Mobil 1 0W-20", "tier": "premium" }
+    ]
+  },
+  {
+    "vehicle_id": "genesis-g70-2023",
+    "type": "ice",
+    "make": "Genesis",
+    "model": "G70",
+    "trim": "2.0T",
+    "year": 2023,
+    "year_range": [2019, 2025],
+    "engine": { "displacement": "2.0L", "type": "Turbocharged I-4", "code": "Smartstream G2.0T", "transmission": "8-speed Automatic" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": "API SP", "ilsac_rating": "GF-6", "capacity_qt": 5.1, "change_interval_miles": 7500, "filter_part": "26350-26922" },
+    "oem_approval": null, "alternative_viscosity": "5W-20",
+    "notes": "Genesis is Hyundai's luxury brand. Performance-oriented turbo sedan using Hyundai Smartstream technology.",
+    "aliases": ["G70"],
+    "source": "2023 Genesis G70 Owner's Manual, Section: Maintenance",
+    "compatible_products": [
+      { "name": "Mobil 1 0W-20", "tier": "premium" },
+      { "name": "Pennzoil Platinum 0W-20", "tier": "premium" }
+    ]
+  },
+  {
+    "vehicle_id": "volvo-xc60-b5-2023",
+    "type": "ice",
+    "make": "Volvo",
+    "model": "XC60",
+    "trim": "B5",
+    "year": 2023,
+    "year_range": [2018, 2025],
+    "engine": { "displacement": "2.0L", "type": "Turbocharged I-4 + Mild Hybrid", "code": "B420T2", "transmission": "8-speed Automatic" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": null, "ilsac_rating": null, "capacity_qt": 5.9, "change_interval_miles": 10000, "filter_part": "31372212" },
+    "oem_approval": "VCC RBS0-2AE", "alternative_viscosity": null,
+    "notes": "Volvo requires VCC RBS0-2AE approved oil. This is a unique Volvo specification — standard API ratings are not sufficient. 48V mild hybrid assist doesn't change oil requirements.",
+    "aliases": ["XC60"],
+    "source": "2023 Volvo XC60 Owner's Manual, Section: Service and Maintenance",
+    "compatible_products": [
+      { "name": "Castrol Edge Professional 0W-20 (VCC RBS0-2AE)", "tier": "premium" },
+      { "name": "Mobil 1 ESP 0W-20", "tier": "premium" }
+    ]
+  },
+  {
+    "vehicle_id": "volvo-xc90-b5-2023",
+    "type": "ice",
+    "make": "Volvo",
+    "model": "XC90",
+    "trim": "B5",
+    "year": 2023,
+    "year_range": [2016, 2025],
+    "engine": { "displacement": "2.0L", "type": "Turbocharged I-4 + Mild Hybrid", "code": "B420T2", "transmission": "8-speed Automatic" },
+    "oil": { "viscosity": "0W-20", "type": "Full Synthetic", "api_rating": null, "ilsac_rating": null, "capacity_qt": 5.9, "change_interval_miles": 10000, "filter_part": "31372212" },
+    "oem_approval": "VCC RBS0-2AE", "alternative_viscosity": null,
+    "notes": "Same powertrain as the XC60. Volvo's flagship SUV with 3-row seating. Heavier vehicle but identical oil requirements.",
+    "aliases": ["XC90"],
+    "source": "2023 Volvo XC90 Owner's Manual, Section: Service and Maintenance",
+    "compatible_products": [
+      { "name": "Castrol Edge Professional 0W-20 (VCC RBS0-2AE)", "tier": "premium" },
+      { "name": "Mobil 1 ESP 0W-20", "tier": "premium" }
+    ]
+  },
+  {
+    "vehicle_id": "tesla-model-3-2023",
+    "type": "ev",
+    "make": "Tesla",
+    "model": "Model 3",
+    "trim": "Long Range",
+    "year": 2023,
+    "year_range": [2017, 2025],
+    "engine": { "displacement": "N/A", "type": "Dual Electric Motor", "code": "N/A", "transmission": "Single-Speed" },
+    "oil": null,
+    "oem_approval": null, "alternative_viscosity": null,
+    "notes": "Electric vehicles do not use engine oil. Tesla Model 3 requires brake fluid replacement every 2 years and cabin air filter replacement annually.",
+    "aliases": ["MODEL 3", "Model3"],
+    "source": "2023 Tesla Model 3 Owner's Manual",
+    "compatible_products": []
+  },
+  {
+    "vehicle_id": "tesla-model-y-2023",
+    "type": "ev",
+    "make": "Tesla",
+    "model": "Model Y",
+    "trim": "Long Range",
+    "year": 2023,
+    "year_range": [2020, 2025],
+    "engine": { "displacement": "N/A", "type": "Dual Electric Motor", "code": "N/A", "transmission": "Single-Speed" },
+    "oil": null,
+    "oem_approval": null, "alternative_viscosity": null,
+    "notes": "Electric vehicles do not use engine oil. Tesla Model Y shares the Model 3 platform. Brake fluid every 2 years, cabin filter annually, tire rotation every 6,250 miles.",
+    "aliases": ["MODEL Y", "ModelY"],
+    "source": "2023 Tesla Model Y Owner's Manual",
+    "compatible_products": []
   }
 ]
