@@ -28,7 +28,7 @@ export async function POST(req: Request) {
     const vehicleContext = buildChatContext(vehicle);
 
     const result = streamText({
-      model: google("gemini-3.0-flash"),
+      model: google("gemini-3-flash-preview"),
       system: `${CHAT_SYSTEM}\n\n${vehicleContext}`,
       messages,
     });

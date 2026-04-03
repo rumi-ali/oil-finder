@@ -1,4 +1,3 @@
-import { generateText } from "ai";
 import { google } from "@ai-sdk/google";
 import { IMAGE_IDENTIFY_SYSTEM } from "@/lib/prompts";
 
@@ -19,15 +18,25 @@ export async function POST(req: Request) {
     const base64 = Buffer.from(bytes).toString("base64");
     const mimeType = imageFile.type || "image/jpeg";
 
+    // Use the Google Generative AI SDK directly for vision
+    const model = google("gemini-2.5-flash");
+    const { generateText } = await import("ai");
+
     const { text } = await generateText({
-      model: google("gemini-3.0-flash"),
-      system: IMAGE_IDENTIFY_SYSTEM,
+      model,
       messages: [
         {
           role: "user",
           content: [
-            { type: "image", image: `data:${mimeType};base64,${base64}` },
-            { type: "text", text: "Identify this vehicle. Return JSON only." },
+            {
+              type: "file",
+              data: base64,
+              mediaType: mimeType,
+            },
+            {
+              type: "text",
+              text: `${IMAGE_IDENTIFY_SYSTEM}\n\nIdentify this vehicle. Return JSON only.`,
+            },
           ],
         },
       ],
@@ -37,7 +46,8 @@ export async function POST(req: Request) {
     const result = JSON.parse(cleaned);
 
     return Response.json(result);
-  } catch {
+  } catch (e) {
+    console.error("Identify error:", e);
     return Response.json(
       { error: "Could not identify vehicle from image" },
       { status: 500 }

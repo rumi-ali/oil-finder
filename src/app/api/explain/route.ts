@@ -24,7 +24,7 @@ export async function POST(req: Request) {
     }
 
     const result = streamText({
-      model: google("gemini-3.0-flash"),
+      model: google("gemini-3-flash-preview"),
       system: OIL_ADVISOR_SYSTEM,
       prompt: buildExplanationPrompt(vehicle),
     });
