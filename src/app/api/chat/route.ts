@@ -37,10 +37,21 @@ export async function POST(req: Request) {
 
     const vehicleContext = buildChatContext(vehicle);
 
+    // Convert UIMessage format (parts) to ModelMessage format (content)
+    type RawMsg = { role: string; content?: string; parts?: Array<{ type: string; text?: string }> };
+    const modelMessages = (messages as RawMsg[]).map((msg) => {
+      if (msg.content) return { role: msg.role as "user" | "assistant", content: msg.content };
+      const text = msg.parts
+        ?.filter((p) => p.type === "text")
+        .map((p) => p.text ?? "")
+        .join("") ?? "";
+      return { role: msg.role as "user" | "assistant", content: text };
+    });
+
     const result = streamText({
       model: google("gemini-3-flash-preview"),
       system: `${CHAT_SYSTEM}\n\n${vehicleContext}`,
-      messages,
+      messages: modelMessages,
     });
 
     return result.toUIMessageStreamResponse();
